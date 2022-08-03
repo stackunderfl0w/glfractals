@@ -17,3 +17,6 @@ add_executable(glfractals main.cpp
         imgui/imgui_widgets.cpp)
 #target_link_libraries(glfractals OpenGL32 GLew32 sdl2main sdl2)
 target_link_libraries(glfractals GLEW OpenGL SDL2main SDL2)
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/pal.png
+        DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
